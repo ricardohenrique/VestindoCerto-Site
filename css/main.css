@@ -57,6 +57,7 @@ body{font-family: 'Open Sans', sans-serif;}
 /*FOOTER*/
 footer.footer{background-color: #1D1D1D;color: #fff;}
 footer.footer .row div p{font-size: 18px;}
+footer.footer ul{list-style: none; padding-left: 0;}
 
 
 @media (max-width: 1200px) and (min-width: 992px){
