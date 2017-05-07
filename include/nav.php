@@ -14,7 +14,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#sobre" class="in-page"><i class="fa fa-university" aria-hidden="true"></i> Sobre</a></li>
 				<li><a href="#como-funciona" class="in-page">Como Funciona <i class="fa fa-question" aria-hidden="true"></i></a></li>
-				<li><a href="#contato" class="in-page"><i class="fa fa-map-marker" aria-hidden="true"></i> Contato</a></li>
+				<li><a href="contato.php"><i class="fa fa-map-marker" aria-hidden="true"></i> Contato</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 						<i class="fa fa-caret-down" aria-hidden="true"></i>
