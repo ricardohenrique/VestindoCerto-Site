@@ -1,0 +1,65 @@
+/*config*/
+.background{background-size: cover;}
+.panel-apresentacao{background-color: rgba(255, 255, 255, 0.75);padding: 130px 15px;margin: 15px 0px;}
+.title-apresentacao{margin-top: 0px;}
+
+/*vestindo-certo*/
+#bk-vestindo-certo{background-image: url('../image/banner-vestindo-certo-principal.jpg');background-size: cover;padding-top: 60px;}
+
+/*problema*/
+#bk-problema{background-image: url('../image/banner-vestindo-certo-01.jpg');background-size: cover;}
+
+/*solucao*/
+#bk-solucao{background-image: url('../image/banner-vestindo-certo-02.jpg');background-size: cover;}
+
+/*caso-de-uso*/
+#bk-caso-de-uso{background-image: url('../image/banner-vestindo-certo-05.jpg');background-size: cover;}
+
+/*implantacao*/
+#bk-implantacao{background-image: url('../image/banner-vestindo-certo-03.jpg');background-size: cover;}
+
+/*bk-diagramas*/
+#bk-diagramas .row.galery div{padding: 0px;}
+#bk-diagramas .row.galery div a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 61, 66, 0.8);
+    transition: all 0.2s;
+}
+#bk-diagramas .row.galery div a:hover{
+    background-color: rgba(54, 61, 66, 0.15);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+#bk-diagramas .row.galery div a span{
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+    z-index: 999;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15%; 
+    transition: all 0.2s;
+}
+#bk-diagramas .row.galery div a:hover span{
+    text-decoration: none;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    font-size: 25px;
+    transition: all 0.2s;
+}
+
+#bk-diagramas .row.galery div img{width: 100%;}
+
+@media (max-width: 1200px) and (min-width: 992px){
+}
+
+@media (max-width: 992px) and (min-width: 768px){
+}
+
+@media (max-width: 767px){
+}

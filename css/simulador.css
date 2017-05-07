@@ -1,0 +1,61 @@
+body{background-image: url('../image/shirt-428620.jpg'); background-size:cover;}
+
+.simulador-head{margin-top:100px;}
+.simulador-head .row div h1{color:#fff;}
+
+.simulador-panel .row div .panel{
+    border-radius: 0px;
+    padding: 20px 10px;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.simulador-panel .row div .panel h2{color:#fff;margin-top: 0px;}
+.simulador-panel .row div .panel form{}
+.simulador-panel .row div .panel form .btn-group.btn-controls{margin-top: 15px;padding-top: 15px;border-top: 1px solid #fff;}
+.simulador-panel .row div .panel form .btn-group{display: table;margin: 0 auto;}
+.simulador-panel .row div .panel form .btn-group label{
+    display: block;
+    margin:10px;
+    font-size: 22px;
+    font-weight: 300;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+.simulador-panel .row div .panel form .btn{
+    display: block;
+    margin: 10px auto;
+    min-width: 300px;
+    padding: 20px 15px;
+    font-size: 22px;
+    font-weight: 300;
+    background-color: #64b5f6;
+    border: 3px solid rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    margin-top: 20px;
+    transition:all 0.2s;
+}
+.simulador-panel .row div .panel form div.btn{max-width: 300px;margin: 10px;}
+.simulador-panel .row div .panel form div.btn.voltar{background-color: #9C9C9C;}
+.simulador-panel .row div .panel form .btn.active{background-color: #CECECE;}
+.simulador-panel .row div .panel form div.btn:hover{background-color: rgba(0, 0, 0, 0.7);color:#64b5f6;transition:all 0.2s;}
+.simulador-panel .row div img{display: block;margin: 0 auto; max-width: 250px;}
+
+.btn span.glyphicon {opacity: 0;}
+.btn.active span.glyphicon{opacity: 1;}
+
+@media (max-width: 1200px) and (min-width: 992px){
+}
+
+@media (max-width: 992px) and (min-width: 768px){
+}
+
+@media (max-width: 767px){
+    .simulador-panel .row div .panel form .btn{
+        padding: 10px 10px;
+        margin: 10px auto!important;
+        display: block!important;
+        width: 200px;
+    }
+    .simulador-panel .row div .panel form .btn-group label{font-size: 18px;}
+}
