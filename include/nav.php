@@ -26,6 +26,11 @@
 					</ul>
 		        </li>
 			</ul>
+			<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Pesquisa:">
+        </div>
+      </form>
 		</div>
 	</div>
 </nav>

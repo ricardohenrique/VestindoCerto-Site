@@ -9,7 +9,7 @@ h1:after, h2:after, h3:after, h4:after, h5:after{
     margin:0 auto;
     margin-top: 5px;
 }
-.container .row div p, 
+.container .row div p,
 .container-fluid .row div p,
 .container .row div ul li{
     font-size:22px;
@@ -27,6 +27,17 @@ body{font-family: 'Open Sans', sans-serif;}
 .navbar .container .navbar-header a.navbar-brand span{}
 .navbar .container ul.navbar-nav li a{font-size: 18px;color: #fff;margin: 25px 5px;padding: 15px 20px;border-radius:3px;border:1px solid rgba(255, 255, 255, 0);transition:all 0.2s;}
 .navbar .container ul.navbar-nav li a:hover{border:1px solid #fff;transition:all 0.2s;}
+/*form nav*/
+.navbar .container form.navbar-form{padding: 20px 20px;}
+.navbar .container form.navbar-form div input{
+	border-radius: 2px;
+	width: 160%;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #fff;
+	height: 40px;
+}
+.navbar .container form.navbar-form div input:focus{box-shadow: none;outline: none;}
 /*dropdown*/
 .navbar .container ul.navbar-nav > li > .dropdown-menu{background-color: rgba(0, 0, 0, 0.5);border: 1px solid rgba(4, 4, 4, 0.5);margin-top: -25px;margin-right: 15px;}
 .navbar .container ul.navbar-nav .dropdown-menu>li>a{border:1px solid rgba(255, 255, 255, 0);margin: 10px 10px;transition:all 0.2s;}
@@ -59,7 +70,7 @@ footer.footer .row div p{font-size: 18px;}
 
 @media (max-width: 767px){
     h1, h2, h3, h4, h5, h6{font-size: 25px;}
-    .container .row div p, 
+    .container .row div p,
     .container-fluid .row div p,
     .container .row div ul li{
         font-size:18px;
@@ -75,4 +86,3 @@ footer.footer .row div p{font-size: 18px;}
 
     .navbar-default .navbar-toggle{border-radius: 0px;margin-top: 15px;}
 }
-
