@@ -12,8 +12,8 @@
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="quemSomos.php"><i class="fa fa-university" aria-hidden="true"></i>Quem Somos</a></li>
-				<li><a href="#como-funciona" class="in-page">Como Funciona <i class="fa fa-question" aria-hidden="true"></i></a></li>
+				<li><a href="quem-somos.php"><i class="fa fa-university" aria-hidden="true"></i>Quem Somos</a></li>
+				<li><a href="como-funciona.php" class="in-page">Como Funciona <i class="fa fa-question" aria-hidden="true"></i></a></li>
 				<li><a href="contato.php"><i class="fa fa-map-marker" aria-hidden="true"></i> Contato</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
