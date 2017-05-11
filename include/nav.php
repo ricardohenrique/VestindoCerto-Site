@@ -29,7 +29,7 @@
 						<li><a href="apresentacao.php"><i class="fa fa-rocket" aria-hidden="true"></i> Apresentação</a></li>			
 					</ul>				
 		        </li>								
-				<li><a href="#!"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>				
+				<li><a href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>				
 			</ul>
 		<form class="navbar-form navbar-left">
 	        <div class="form-group">

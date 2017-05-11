@@ -26,6 +26,7 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <div class="container-fluid quemSomos" id="sobre">
         <div class="container-fluid vestindo-certo" id="sobre">
             <div class="row">
@@ -85,6 +86,10 @@
         </div>
     </div>	
     <script>
+=======
+	
+   <script>
+>>>>>>> 1917627fd4069884edf4198987176a4f76e81721
         $(document).ready(function(){
             $(".in-page").on('click', function(event) {
                 event.preventDefault();
@@ -111,5 +116,3 @@
         });
     </script>
 <?php include('include/footer.php') ?>
-
-
