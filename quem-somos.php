@@ -1,6 +1,6 @@
 <?php include('include/head.php') ?>
 <link rel="stylesheet" type="text/css" href="css/quemSomos.css">
-<div class="container-fluid quemSomos" id="sobre">
+<div class="container-fluid vestindo-certo quemSomos" id="sobre">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-offset-2 col-sm-8">

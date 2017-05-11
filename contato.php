@@ -2,9 +2,9 @@
     <link rel="stylesheet" type="text/css" href="css/contato.css">
     <div class="container-fluid contato" id="contato">
         <div class="container">
-    		<div class="row">
-    			<div class="col-sm-offset-2 col-sm-8">
-    				<h3>Contato</h3>
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <h3>Contato</h3>
                     <p><strong>E-mail: </strong>contato@vestindocerto.com.br</p>
                     <p><strong>Telefone: </strong>(11) 9.9396-1643</p>
                     <form action="" method="POST" class="row">
@@ -21,8 +21,8 @@
                             <button class="btn btn-default"><i class="fa fa-paper-plane-o"></i> Enviar </button>
                         </div>
                     </form>
-    			</div>
-    		</div>
+                </div>
+            </div>
         </div>
     </div>
 <?php include('include/footer.php') ?>
