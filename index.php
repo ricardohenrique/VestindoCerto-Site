@@ -26,7 +26,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     <div class="container-fluid quemSomos" id="sobre">
         <div class="container-fluid vestindo-certo" id="sobre">
             <div class="row">
