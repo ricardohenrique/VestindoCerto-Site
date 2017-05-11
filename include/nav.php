@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="css/nav.css">
+
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
@@ -15,7 +15,7 @@
 				<li><a href="quem-somos.php"><i class="fa fa-university" aria-hidden="true"></i>Quem Somos</a></li>
 				<li><a href="como-funciona.php">Como Funciona <i class="fa fa-question" aria-hidden="true"></i></a></li>
 				<li><a href="contato.php"><i class="fa fa-map-marker" aria-hidden="true"></i> Contato</a></li>
-				<li><a href="#!"><i class="glyphicon glyphicon-user" aria-hidden="true"></i> Login</a></li>
+				<li><a href="#!"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 						<i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -27,11 +27,11 @@
 					</ul>
 		        </li>
 			</ul>
-			<form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Pesquisa:">
-        </div>
-      </form>
+		<form class="navbar-form navbar-left">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Pesquisa:">
+	        </div>
+      	</form>
 		</div>
 	</div>
 </nav>
