@@ -7,3 +7,29 @@ nav.navbar{
     box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     -webkit-animation: animate-fade-in 0.5s;
 }
+
+.roupa-perfeita{
+    padding: 140px 15px;
+    background-color: #64b5f6;
+    color: #fff;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2),0 0px 20px 0 rgba(0,0,0,0.19);
+}
+.roupa-perfeita .row div img{max-width: 200px;margin: 0 auto;display: block;}
+.roupa-perfeita h2:after{background-color:#fff;}
+.roupa-perfeita .row div .panel{color: #fff;background:none;text-align:center;transition:all 0.2s;}
+.roupa-perfeita .row div .panel:hover{background-color:#457BA7;transition:all 0.2s;}
+.roupa-perfeita .row div .panel .panel-body{padding: 30px 20px;}
+.roupa-perfeita .row div .panel .panel-body span{
+	font-size: 40px;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 20px;
+    border-radius: 45px;
+    font-weight: 300;
+}
+.roupa-perfeita .row div .panel .panel-body p{
+    padding: 10px 10px;
+    margin-top: 30px;
+    border-top: 1px solid #fff;
+}
+.roupa-perfeita{padding: 20px 15px;}	
