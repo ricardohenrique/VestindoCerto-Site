@@ -27,7 +27,7 @@
         </div>
     </div>
 	
-    <script>
+   <script>
         $(document).ready(function(){
             $(".in-page").on('click', function(event) {
                 event.preventDefault();
@@ -54,5 +54,3 @@
         });
     </script>
 <?php include('include/footer.php') ?>
-
-
