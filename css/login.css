@@ -1,7 +1,26 @@
-#login{
-	margin-top: 100px;
-	margin-bottom: 50px;
+#login{margin-top: 100px; margin-bottom: 50px;
 }
+
+form .form-group button{
+	margin: auto;
+	display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    border-radius: 0px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    font-weight: 700;
+    padding: 15px 17px;
+    min-width: 165px;
+    transition: all 0.2s;
+    border:none;
+}
+
+form .form-group button:hover{
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); background-color: #333;
+    color: #fff; 
+}	
 
 nav.navbar{
 		background-color: rgba(0, 0, 0, 0.5);
