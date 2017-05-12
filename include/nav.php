@@ -34,7 +34,7 @@
 				<li class="visible-xs"><a href="simulador.php">Simulador</a></li>
 				<li class="visible-xs"><a href="apresentacao.php">Apresentação</a></li>
 				<li class="visible-xs"><a href="contato.php">Contato</a></li>
-				<li class="visible-xs"><a href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+				<li><a href="login.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
 			</ul>
 		<form class="navbar-form navbar-left hidden-xs">
 	        <div class="form-group">
