@@ -85,10 +85,6 @@
         </div>
     </div>	
     <script>
-=======
-	
-   <script>
->>>>>>> 1917627fd4069884edf4198987176a4f76e81721
         $(document).ready(function(){
             $(".in-page").on('click', function(event) {
                 event.preventDefault();
