@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-    </div>	
+    </div>
     <script>
         $(document).ready(function(){
             $(".in-page").on('click', function(event) {
@@ -97,7 +97,7 @@
             });
         });
     </script>
-    <script>        
+    <script>
         $(function(){
             $("#owl-demo").owlCarousel({
                 navigation : false, // Show next and prev buttons
