@@ -54,12 +54,6 @@ body{font-family: 'Open Sans', sans-serif;}
 .nav-alter{background-color: rgba(0, 0, 0, 0.5);box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
 .nav-alter .container .navbar-header a.navbar-brand{padding: 30px 15px;}
 
-/*FOOTER*/
-footer.footer{background-color: #1D1D1D;color: #fff;}
-footer.footer .row div p{font-size: 18px;}
-footer.footer ul{list-style: none; padding-left: 0;}
-
-
 @media (max-width: 1200px) and (min-width: 992px){
     .navbar .container ul.navbar-nav li a{margin: 25px 10px;padding: 15px 15px;}
 }

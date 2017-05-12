@@ -1,0 +1,11 @@
+/*FOOTER*/
+footer.footer{background-color: #1D1D1D;color: #fff;}
+footer.footer ul{list-style: none; padding-left: 0;}
+footer.footer ul li a{color:#999; font-size: 13px}
+footer.footer ul li a:hover{color: #fff;text-decoration: none;}
+footer.footer .footer-logo{padding: 20px}
+footer.footer .footer-links{padding: 15px;}
+footer.footer .footer-copyright p{font-size: 14px;}
+footer.footer .footer-copyright{background-color: #131212; padding: 10px}
+
+
