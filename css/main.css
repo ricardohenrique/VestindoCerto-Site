@@ -39,7 +39,7 @@ body{font-family: 'Open Sans', sans-serif;}
 }
 .navbar .container form.navbar-form div input:focus{box-shadow: none;outline: none;}
 /*dropdown*/
-.navbar .container ul.navbar-nav > li > .dropdown-menu{background-color: rgba(0, 0, 0, 0.5);border: 1px solid rgba(4, 4, 4, 0.5);margin-top: -25px;margin-right: 15px;}
+.navbar .container ul.navbar-nav > li > .dropdown-menu{background-color: rgba(0, 0, 0, 0.5);border: 1px solid rgba(4, 4, 4, 0.5);margin-top: -25px;margin-right: 5px;}
 .navbar .container ul.navbar-nav .dropdown-menu>li>a{border:1px solid rgba(255, 255, 255, 0);margin: 10px 10px;transition:all 0.2s;}
 .navbar .container ul.navbar-nav .dropdown-menu>li>a:hover{border:1px solid #fff;transition:all 0.2s;background: none;}
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{background: none;color:#fff;}
