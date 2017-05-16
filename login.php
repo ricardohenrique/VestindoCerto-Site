@@ -8,20 +8,20 @@
                     <form action="" method="POST" class="row">
                         <div class="form-group col-sm-12">
                             <div class="input-group">
-                                <div class="input-group-addon form"><i class="fa fa-user" aria-hidden="true"></i></div>
+                                <div class="input-group-addon form"><i class="fa fa-user icon-input" aria-hidden="true"></i></div>
                                 <input type="text" class="form-control" id="exampleInputAmount" placeholder="E-mail">
                             </div>
                         </div>
 
                         <div class="form-group col-sm-12">
                             <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></div>
+                                <div class="input-group-addon"><i class="fa fa-key icon-input" aria-hidden="true"></i></div>
                                 <input type="password" name="senha" class="form-control" placeholder="Senha: ">
                             </div>
                         </div>  
                             <div class="checkbox">
                                 <label class="col-sm-offset-1">
-                                    <input type="checkbox"> Remember me
+                                    <input type="checkbox"> Manter conectado
                                 </label>
                             </div>
                         <div class="form-group col-sm-6">

@@ -1,4 +1,27 @@
-#login{margin-top: 100px; margin-bottom: 50px;
+#login{margin-top: 120px; margin-bottom: 70px;
+}
+
+.form-group .input-group-addon .icon-input{
+	width: 20px;
+}
+
+.input-group .form-control{
+	font-size: 18px;
+    height: 50px;
+    border-radius: 0px;
+    box-shadow: none;
+    border: 1px solid #333;
+    background-color: #64B5F6;
+    color: #333;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+#login .input-group .form-control::-webkit-input-placeholder {color:#333;font-weight: 700;}
+
+.input-group .form-control:focus{
+    background-color: #333;
+    color: #fff;
+    transition: all 0.2s;
 }
 
 form .form-group button{
@@ -23,7 +46,7 @@ form .form-group button:hover{
 }	
 
 nav.navbar{
-		background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     -webkit-animation: animate-fade-in 0.5s;
 }
