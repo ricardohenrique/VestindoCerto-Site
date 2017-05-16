@@ -109,7 +109,7 @@
                 </div>
                 <div class="panel" id="panel-04" style="display: none;">
                     <h2>Look gerado</h2>
-                    <img src="image/ilustracao-look-homen.jpg" alt="">
+                    <img src="image/ilustracao-look-homen.jpg" alt="Roupa Homem" title="Roupa Homem">
                     <form action="" >
                         <div class="btn-group btn-controls" data-toggle="buttons">
                             <div class="btn btn-default voltar" id="btn-panel-04">Gerar de novo</div>

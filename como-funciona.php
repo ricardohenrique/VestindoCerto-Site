@@ -34,7 +34,7 @@
 							</div>
 						</div>
 		                <div class="col-sm-12">
-		                    <img src="image/ilustracao-look-homen.jpg" alt="">
+		                    <img src="image/ilustracao-look-homen.jpg" alt="Roupa Homem" title="Roupa Homem">
 		                </div>
 					</div>
 				</div>
