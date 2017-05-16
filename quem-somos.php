@@ -3,6 +3,14 @@
 <div class="container-fluid vestindo-certo quemSomos" id="sobre">
 	<div class="container">
 		<div class="row">
+			<div class="col-sm-12">
+				<ol class="breadcrumb">
+					<li><a href="./">Home</a></li>
+					<li class="active">Quem Somos</li>
+				</ol>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-sm-offset-2 col-sm-8">
 				<h1>Selecionar a melhor roupa nunca foi tão fácil</h1>
 		        <ul class="fa-ul">

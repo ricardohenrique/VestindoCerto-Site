@@ -60,7 +60,7 @@
                 <div class="col-sm-12">
                     <div class="panel-apresentacao">
                         <h4 >Caso de uso</h4>
-                        <img id="caso-de-uso" src="image/diagramas/caso-de-uso.jpg" alt="" style="width: 100%;">
+                        <img id="caso-de-uso" src="image/diagramas/caso-de-uso.jpg" alt="Caso de Uso" title="Caso de Uso" style="width: 100%;">
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                 <div class="col-sm-12">
                     <div class="panel-apresentacao">
                         <h5>Implantação</h5>
-                        <img id="implantacao" src="image/diagramas/diagrama-de-implantacao.jpg" alt="" style="width: 100%;">
+                        <img id="implantacao" src="image/diagramas/diagrama-de-implantacao.jpg" alt="Diagrama de Implantação" title="Diagrama de Implantação" style="width: 100%;">
                     </div>
                 </div>
             </div>
@@ -91,25 +91,25 @@
                 <a target="blank" href="image/diagramas/caso-de-uso.jpg">
                     <span class="vertical-align">Caso de Uso</span>
                 </a>
-                <img src="image/diagramas/thumb-caso-de-uso.jpg" alt="" style="width: 100%;">
+                <img src="image/diagramas/thumb-caso-de-uso.jpg" alt="Diagrama de Caso de Uso" title="Diagrama de Caso de Uso" style="width: 100%;">
             </div>
             <div class="col-sm-3">
                 <a target="blank" href="image/diagramas/diagrama-de-classe.jpg">
                     <span class="vertical-align">Diagrama de Classe</span>
                 </a>
-                <img src="image/diagramas/thumb-diagrama-de-classe.jpg" alt="" style="width: 100%;">
+                <img src="image/diagramas/thumb-diagrama-de-classe.jpg" alt="Diagrama de Classe" title="Diagrama de Classe"  style="width: 100%;">
             </div>
             <div class="col-sm-3">
                 <a target="blank" href="image/diagramas/sequencia-gerar-look.jpg">
                     <span class="vertical-align">Sequencia Gerar Look</span>
                 </a>
-                <img src="image/diagramas/thumb-sequencia-gerar-look.jpg" alt="" style="width: 100%;">
+                <img src="image/diagramas/thumb-sequencia-gerar-look.jpg" alt="Diagrama de Sequencia Gerar Look" title="Diagrama de Sequencia Gerar Look" style="width: 100%;">
             </div>
             <div class="col-sm-3">
                 <a target="blank" href="image/diagramas/sequencia-manter-local.jpg">
                     <span class="vertical-align">Sequencia Manter Local</span>
                 </a>
-                <img src="image/diagramas/thumb-sequencia-manter-local.jpg" alt="" style="width: 100%;">
+                <img src="image/diagramas/thumb-sequencia-manter-local.jpg" alt="Diagrama de Sequencia Manter Local" title="Diagrama de Sequencia Mantar Local" style="width: 100%;">
             </div>
         </div>
         <div class="row galery">
@@ -117,25 +117,25 @@
                 <a target="blank" href="image/diagramas/sequencia-manter-roupa.jpg">
                     <span class="vertical-align">Sequencia Manter Roupa</span>
                 </a>
-                <img src="image/diagramas/thumb-sequencia-manter-roupa.jpg" alt="" style="width: 100%;">
+                <img src="image/diagramas/thumb-sequencia-manter-roupa.jpg" alt="Diagrama de Sequencia Manter Roupa" title="Diagrama de Manter Roupa" style="width: 100%;">
             </div>
             <div class="col-sm-3">
                 <a target="blank" href="image/diagramas/sequencia-manter-usuario.jpg">
                     <span class="vertical-align">Sequencia Manter Usuário</span>
                 </a>
-                <img src="image/diagramas/thumb-sequencia-manter-usuario.jpg" alt="" style="width: 100%;">
+                <img src="image/diagramas/thumb-sequencia-manter-usuario.jpg" alt="Diagrama de Sequencia Manter Usuário" title="Diagrama de Sequencia Manter Usuário" style="width: 100%;">
             </div>
             <div class="col-sm-3">
                 <a target="blank" href="image/diagramas/sequencia-alterar-roupa.jpg">
                     <span class="vertical-align">Sequencia Alterar Roupa</span>
                 </a>
-                <img  src="image/diagramas/thumb-sequencia-alterar-roupa.jpg" alt="" style="width: 100%;">
+                <img  src="image/diagramas/thumb-sequencia-alterar-roupa.jpg" alt="Diagrama de Sequencia Alterar Roupa" title="Diagrama de Sequencia Manter Roupa" style="width: 100%;">
             </div>
             <div class="col-sm-3">
                 <a target="blank" href="image/diagramas/sequencia-alterar-usuario.jpg">
                     <span class="vertical-align">Sequencia Alterar Usuário</span>
                 </a>
-                <img  src="image/diagramas/thumb-sequencia-alterar-usuario.jpg" alt="" style="width: 100%;">
+                <img  src="image/diagramas/thumb-sequencia-alterar-usuario.jpg" alt="Diagrama de Sequencia Alterar Usuário" title="Diagrama de Sequencia Alterar Usuário" style="width: 100%;">
             </div>
         </div>
         <div class="row galery">
@@ -143,25 +143,25 @@
                 <a target="blank" href="image/diagramas/atividade-gerar-look.jpg">
                     <span class="vertical-align">Atividade Gerar Look</span>
                 </a>
-                <img  src="image/diagramas/thumb-atividade-gerar-look.jpg" alt="" style="width: 100%;">
+                <img  src="image/diagramas/thumb-atividade-gerar-look.jpg" alt="Diagrama de Atividade Gerar Look" title="Diagrama de Atividade Gerar Look" style="width: 100%;">
             </div>
             <div class="col-sm-3">
                 <a target="blank" href="image/diagramas/diagrama-de-estado.jpg">
                     <span class="vertical-align">Máquina de Estado</span>
                 </a>
-                <img  src="image/diagramas/thumb-diagrama-de-estado.jpg" alt="" style="width: 100%;">
+                <img  src="image/diagramas/thumb-diagrama-de-estado.jpg" alt="Diagrama de Estado" title="Diagrama de Estado" style="width: 100%;">
             </div>
             <div class="col-sm-3">
                 <a target="blank" href="image/diagramas/diagrama-de-implantacao.jpg">
                     <span class="vertical-align">Implantação</span>
                 </a>
-                <img  src="image/diagramas/thumb-diagrama-de-implantacao.jpg" alt="" style="width: 100%;">
+                <img  src="image/diagramas/thumb-diagrama-de-implantacao.jpg" alt="Diagrama de Implantação" title="Diagrama de Implantação style="width: 100%;">
             </div>
             <div class="col-sm-3">
                 <a target="blank" href="image/diagramas/UC_vestindo_certo.pdf">
                     <span class="vertical-align">Especificação de Caso de Uso</span>
                 </a>
-                <img  src="image/diagramas/thumb-especificacao-de-caso-de-uso.jpg" alt="" style="width: 100%;">
+                <img  src="image/diagramas/thumb-especificacao-de-caso-de-uso.jpg" alt="Caso de Uso" title="Casp de Uso" style="width: 100%;">
             </div>
         </div>
     </div>
