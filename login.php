@@ -21,14 +21,14 @@
                         </div>  
                             <div class="checkbox">
                                 <label class="col-sm-offset-1">
-                                    <input type="checkbox"> Remember me
+                                    <input type="checkbox"> Manter conectado
                                 </label>
                             </div>
                         <div class="form-group col-sm-6">
                             <button class="btn btn-default"><i class="fa fa-sign-in" aria-hidden="true"></i> Entrar </button>
                         </div>
                         <div class="form-group col-sm-6">
-                            <button class="btn btn-default"><i class="fa fa-user-plus" aria-hidden="true"></i> Cadastre-se </button>
+                            <a href="cadastro.php"><button class="btn btn-default"><i class="fa fa-user-plus" aria-hidden="true"></i> Cadastre-se </button></a>
                         </div>
                     </form>
     			</div>

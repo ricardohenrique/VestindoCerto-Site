@@ -10,19 +10,19 @@
     <div class="container-fluid container-carousel banner" id="home" name="home">
         <div id="owl-demo" class="owl-carousel owl-theme">
             <div class="item">
-                <img src="image/banner-vestindo-certo-principal.jpg" class="img-responsive">
+                <img src="image/banner-vestindo-certo-principal.jpg" class="img-responsive" alt="Mulher procurando roupa" title="Mulher procurando roupa">
             </div>
             <div class="item">
-                <img src="image/banner-vestindo-certo-01.jpg" class="img-responsive">
+                <img src="image/banner-vestindo-certo-01.jpg" class="img-responsive" alt="Zipper Preto" title="Zipper Preto">
             </div>
             <div class="item">
-                <img src="image/banner-vestindo-certo-02.jpg" class="img-responsive">
+                <img src="image/banner-vestindo-certo-02.jpg" class="img-responsive" alt="Cabide Masculino" title="Cabide Masculino">
             </div>
             <div class="item">
-                <img src="image/banner-vestindo-certo-04.jpg" class="img-responsive">
+                <img src="image/banner-vestindo-certo-04.jpg" class="img-responsive" alt="Conjunto Social" title="Conjunto Social">
             </div>
             <div class="item">
-                <img src="image/banner-vestindo-certo-05.jpg" class="img-responsive">
+                <img src="image/banner-vestindo-certo-05.jpg" class="img-responsive" alt="Cabide Feminino" title="Cabide Feminino">
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <img src="image/ilustracao-look-homen.jpg" alt="">
+                            <img src="image/ilustracao-look-homen.jpg" alt="Roupa Homem" title="Roupa Homem">
                         </div>
                     </div>
                 </div>
