@@ -3,7 +3,9 @@
 
 .form-group .input-group-addon{
     background-color: #64B5F6;
-    color: #333
+    color: #333;
+    border:1px solid #333;
+    border-right: none;
 }
 
 .form-group .input-group{
@@ -21,12 +23,17 @@
     background-color: #64B5F6;
     color: #333;
     font-weight: 700;
+    /*border-color:#333;*/
+    border:1px solid #333;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: none;
     transition: all 0.2s;
 }
 #login .input-group .form-control::-webkit-input-placeholder {color:#333;font-weight: 700;}
 
 .input-group .form-control:focus{
-    background-color: #333;
+    /*background-color: #333;*/
     color: #fff;
     transition: all 0.2s;
 }
@@ -49,8 +56,8 @@ form .form-group button{
 
 form .form-group button:hover{
     box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); background-color: #333;
-    color: #fff; 
-}	
+    color: #fff;
+}
 
 nav.navbar{
 	background-color: rgba(0, 0, 0, 0.5);
