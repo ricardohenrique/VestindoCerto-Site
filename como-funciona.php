@@ -3,6 +3,14 @@
 	<div class="container-fluid roupa-perfeita comoFunciona" id="como-funciona" name="como-funciona">
 		<div class="container">
 			<div class="row">
+				<div class="col-sm-12">
+					<ol class="breadcrumb">
+						<li><a href="./">Home</a></li>
+						<li class="active">Como Funciona</li>
+					</ol>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-sm-offset-2 col-sm-8">
 					<h2>Escolhendo a roupa perfeita</h2>
 					<!--<p>Se você quer um look clássico ou elegante, tente uma calça cáqui com uma blusa de seda.<br>Se você está procurando por um visual casual, experimente uma calça jeans num modelo antigo e mais largo e uma blusa com rendas.</p>-->
