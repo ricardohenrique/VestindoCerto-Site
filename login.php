@@ -16,15 +16,15 @@
                     <form action="" method="POST" class="row">
                         <div class="form-group col-sm-12">
                             <div class="input-group">
-                                <div class="input-group-addon form"><i class="fa fa-user icon-input" aria-hidden="true"></i></div>
-                                <input type="text" class="form-control" id="exampleInputAmount" placeholder="E-mail">
+                                <div class="input-group-addon form"><i id="email" class="fa fa-user icon-input" aria-hidden="true"></i></div>
+                                <input type="text" class="form-control" id="textEmail" placeholder="E-mail">
                             </div>
                         </div>
 
                         <div class="form-group col-sm-12">
                             <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-key icon-input" aria-hidden="true"></i></div>
-                                <input type="password" name="senha" class="form-control" placeholder="Senha: ">
+                                <div class="input-group-addon"><i id="senha" class="fa fa-key icon-input" aria-hidden="true"></i></div>
+                                <input type="password" name="senha" class="form-control" id="textPassword" placeholder="Senha: ">
                             </div>
                         </div>
                             <div class="checkbox">
@@ -42,5 +42,13 @@
     			</div>
     		</div>
         </div>
+        <script type="text/javascript">
+            $('#textEmail').click(function () {                
+                $('#email').css('color', '#fff');                               
+            });
+            $('#textPassword').click(function () {                
+                $('#senha').css('color', '#fff');                               
+            });
+        </script>
     </div>
 <?php include('include/footer.php') ?>
