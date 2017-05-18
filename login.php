@@ -20,7 +20,6 @@
                                 <input type="text" class="form-control" id="textEmail" placeholder="E-mail">
                             </div>
                         </div>
-
                         <div class="form-group col-sm-12">
                             <div class="input-group">
                                 <div class="input-group-addon"><i id="senha" class="fa fa-key icon-input" aria-hidden="true"></i></div>
