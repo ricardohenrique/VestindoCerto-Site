@@ -75,6 +75,7 @@ nav.navbar{
         width: 52%;
     }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1199px){
     .input-group .form-control{
         width: 100%;        
