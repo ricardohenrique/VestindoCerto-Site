@@ -43,11 +43,17 @@
     		</div>
         </div>
         <script type="text/javascript">
-            $('#textEmail').click(function () {                
+            $('#textEmail').focusin(function () {                
                 $('#email').css('color', '#fff');                               
             });
-            $('#textPassword').click(function () {                
+            $('#textEmail').focusout(function () {                
+                $('#email').css('color', '#333');                               
+            });
+            $('#textPassword').focusin(function () {                
                 $('#senha').css('color', '#fff');                               
+            });
+            $('#textPassword').focusout(function () {                
+                $('#senha').css('color', '#333');                               
             });
         </script>
     </div>

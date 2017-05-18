@@ -64,3 +64,12 @@ nav.navbar{
     box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     -webkit-animation: animate-fade-in 0.5s;
 }
+@media (min-width: 768px){
+    .input-group.form-control {
+        width: 1%;
+    }
+}
+@media (min-width: 768px){}
+    .col-sm-6 {
+        width: none;
+}
