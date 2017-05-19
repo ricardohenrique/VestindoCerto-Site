@@ -3,9 +3,9 @@
 }
 
 nav.navbar{
-		background-color: rgba(0, 0, 0, 0.5);
+		/*background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    -webkit-animation: animate-fade-in 0.5s;
+    -webkit-animation: animate-fade-in 0.5s;*/
 }
 
 .roupa-perfeita{
@@ -32,4 +32,4 @@ nav.navbar{
     margin-top: 30px;
     border-top: 1px solid #fff;
 }
-.roupa-perfeita{padding: 20px 15px;}	
+.roupa-perfeita{padding: 20px 15px;}

@@ -1,4 +1,5 @@
 <?php include('include/head.php') ?>
+    <script type="text/javascript"  src="js/nav-index.js"></script>
     <!-- OWL CAROUSSEL -->
     <script type="text/javascript" src="plugin/owl-carousel/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="plugin/owl-carousel/owl.carousel.css">

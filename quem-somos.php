@@ -1,4 +1,5 @@
 <?php include('include/head.php') ?>
+<script type="text/javascript"  src="js/nav-pages.js"></script>
 <link rel="stylesheet" type="text/css" href="css/quemSomos.css">
 <div class="container-fluid vestindo-certo quemSomos" id="sobre">
 	<div class="container">
@@ -25,4 +26,7 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	<?php include("js/nav-color.js") ?>
+</script>
 <?php include('include/footer.php') ?>

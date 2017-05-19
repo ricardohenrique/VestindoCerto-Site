@@ -1,4 +1,5 @@
 <?php include('include/head.php') ?>
+<script type="text/javascript"  src="js/nav-pages.js"></script>
     <link rel="stylesheet" type="text/css" href="css/contato.css">
     <div class="container-fluid contato" id="contato">
         <div class="container">

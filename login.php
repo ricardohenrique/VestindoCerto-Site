@@ -1,4 +1,5 @@
 <?php include('include/head.php') ?>
+<script type="text/javascript"  src="js/nav-pages.js"></script>
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <div class="container-fluid contato" id="login">
         <div class="container">
@@ -42,17 +43,17 @@
     		</div>
         </div>
         <script type="text/javascript">
-            $('#textEmail').focusin(function () {                
-                $('#email').css('color', '#fff');                               
+            $('#textEmail').focusin(function () {
+                $('#email').css('color', '#fff');
             });
-            $('#textEmail').focusout(function () {                
-                $('#email').css('color', '#333');                               
+            $('#textEmail').focusout(function () {
+                $('#email').css('color', '#333');
             });
-            $('#textPassword').focusin(function () {                
-                $('#senha').css('color', '#fff');                               
+            $('#textPassword').focusin(function () {
+                $('#senha').css('color', '#fff');
             });
-            $('#textPassword').focusout(function () {                
-                $('#senha').css('color', '#333');                               
+            $('#textPassword').focusout(function () {
+                $('#senha').css('color', '#333');
             });
         </script>
     </div>
