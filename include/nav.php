@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand in-page" href="index.php#home">Vestindo Certo</a>
+			<a class="navbar-brand in-page" href="index.php#home" tabindex="1">Vestindo Certo</a>
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
@@ -38,7 +38,7 @@
 			</ul>
 		<form class="navbar-form navbar-left hidden-xs">
 	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Pesquisa:">
+	          <input type="text" class="form-control" placeholder="Pesquisa:"  tabindex="2">
 	        </div>
       	</form>
 		</div>
