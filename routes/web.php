@@ -16,22 +16,14 @@ Route::get('/', function () {
 });
 
 */
+// Auth::routes();
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@index');
+Route::get('index', 'HomeController@index');
+Route::get('quem-somos', "QuemSomosController@index");
+Route::get('contato', "ContatoController@index");
+// Route::get('login', "LoginController@index");
 
-Route::get('index', function () {
-    return view('index');
-});
-
-Route::get('quem-somos', function () {
-    return view('quem-somos');
-});
-
-Route::get('contato', function () {
-    return view('contato');
-});
 
 Route::get('como-funciona', function () {
     return view('como-funciona');
@@ -45,6 +37,6 @@ Route::get('apresentacao', function () {
     return view('apresentacao');
 });
 
-Route::get('login', function () {
-    return view('login');
-});
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
