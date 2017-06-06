@@ -25,17 +25,11 @@ Route::get('contato', "ContatoController@index");
 Route::get('login-2', "LoginController@index");
 
 
-Route::get('como-funciona', function () {
-    return view('como-funciona');
-});
+Route::get('como-funciona', "ComoFuncionaController@index");
 
-Route::get('simulador', function () {
-    return view('simulador');
-});
+Route::get('simulador', "SimuladorController@index");
 
-Route::get('apresentacao', function () {
-    return view('apresentacao');
-});
+Route::get('apresentacao', "ApresentacaoController@index");
 
 Auth::routes();
 

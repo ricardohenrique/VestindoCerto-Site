@@ -10,7 +10,7 @@
 				<ul>
 	            	<li><a href="{{url('index')}}">Home</a></li>
 	              	<li><a href="{{url('apresentacao')}}">Apresentação</a></li>	         
-	              	<li><a href="{{url('quem-somos')}}">Sobre Nós</a></li>
+	              	<li><a href="{{url('quem-somos')}}">Quem somos</a></li>
 	            </ul>								
 			</div>
 			<div class="col-sm-3 footer-links">
