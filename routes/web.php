@@ -22,7 +22,7 @@ Route::get('/', 'HomeController@index');
 Route::get('index', 'HomeController@index');
 Route::get('quem-somos', "QuemSomosController@index");
 Route::get('contato', "ContatoController@index");
-// Route::get('login', "LoginController@index");
+Route::get('login-2', "LoginController@index");
 
 
 Route::get('como-funciona', function () {
