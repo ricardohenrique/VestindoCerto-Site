@@ -59,7 +59,10 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-md-6 col-md-offset-3">
+                                    <div class="form-group col-sm-6">
+                                        <a href="{{asset('/login')}}" class="btn btn-default"><i class="fa fa-chevron-left" aria-hidden="true"></i> Voltar </a>
+                                    </div>
+                                    <div class="form-group col-sm-6">
                                         <button type="submit" class="btn btn-primary"><i class="fa fa-save" aria-hidden="true"></i> Cadastar </button>
                                     </div>
                                 </div>
