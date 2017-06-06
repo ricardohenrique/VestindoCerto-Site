@@ -10,12 +10,12 @@
             <div class="col-sm-12">
                 <ol class="breadcrumb">
                     <li><a href="{{asset('/')}}">Home</a></li>
-                    <li class="active">Cadastro</li>
+                    <li class="active">Cadastre-se</li>
                 </ol>
             </div>
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
-                    <h3>Cadastro</h3>                                            
+                    <h3>Cadastre-se</h3>                                            
                         <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
                             {{ csrf_field() }}
 
