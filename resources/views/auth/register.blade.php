@@ -14,8 +14,6 @@
                     <li class="active">Cadastre-se</li>
                 </ol>
             </div>
-        </div>
-        <div>
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
                     <h3>Cadastre-se</h3>                                            
@@ -36,7 +34,7 @@
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} col-sm-12">
                             <div class="input-group">
                                 <div class="input-group-addon form"><i id="email" class="fa fa-envelope icon-input" aria-hidden="true"></i></div>
-                                <input id="email" type="email" class="form-control" placeholder="E-mail" name="email" value="{{ old('email') }}" required autofocus>
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="E-mail" required autofocus>
                             </div>
                             @if ($errors->has('email'))
                             <span class="help-block">
@@ -60,6 +58,7 @@
                                 <div class="input-group-addon form"><i id="email" class="fa fa-check icon-input" aria-hidden="true"></i></div>
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirmar Senha"required>
                             </div>
+                        </div>
                             <div class="form-group">
                                 <div class="form-group col-sm-6">
                                     <a href="{{asset('/login')}}" class="btn btn-default"><i class="fa fa-chevron-left" aria-hidden="true"></i> Voltar </a>
