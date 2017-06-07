@@ -10,7 +10,7 @@
             <div class="col-sm-12">
                 <ol class="breadcrumb">
                     <li><a href="{{asset('/')}}">Home</a></li>
-                    <li class="active">Login</li>
+                    <li class="active">Login</li>                    
                 </ol>
             </div>
         </div>
@@ -41,7 +41,6 @@
                             </span>
                         @endif
                     </div>
-
                     <div class="checkbox">
                         <label class="col-sm-offset-1">
                             <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Continuar conectado

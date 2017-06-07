@@ -1,4 +1,4 @@
-#login{margin-top: 120px; margin-bottom: 70px;
+#login{margin-top: 120px; margin-bottom: 50px;
 }
 
 .form-group .input-group-addon{
@@ -15,7 +15,7 @@
 	width: 20px;
 }
 
-.form-horizontal .form-group{margin-left: 0;}
+.form-group{margin-left: 0;}
 
 .input-group .form-control{
 	font-size: 18px;

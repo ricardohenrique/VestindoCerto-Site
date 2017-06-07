@@ -1,7 +1,7 @@
 @extends('layout.master')
 @section('head')
-<script type="text/javascript"  src="{{asset('js/nav-pages.js')}}"></script>
-<link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">
+    <script type="text/javascript"  src="{{asset('js/nav-pages.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">
 @stop
 @section('content')
 <div class="container-fluid contato" id="login">
@@ -14,20 +14,20 @@
                     <li class="active">Cadastre-se</li>
                 </ol>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                    <h3>Cadastre-se</h3>                                            
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }} col-sm-12">
-                            <div class="input-group">
-                                <div class="input-group-addon form"><i id="email" class="fa fa-user icon-input" aria-hidden="true"></i></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-4 col-sm-4">
+                <h3>Cadastre-se</h3>                                            
+                <form class="row" role="form" method="POST" action="{{ route('register') }}">
+                    {{ csrf_field() }}
+                    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }} col-sm-12">
+                        <div class="input-group">
+                            <div class="input-group-addon form"><i id="email" class="fa fa-user icon-input" aria-hidden="true"></i></div>
                                 <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Nome" required autofocus>
                                 @if ($errors->has('name'))
-                                <span class="help-block">
-                                    <strong>{{ $errors->first('name') }}</strong>
-                                </span>
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
                                 @endif
                             </div>                                    
                         </div>
