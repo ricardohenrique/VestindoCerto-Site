@@ -1,67 +1,72 @@
-<?php include('../include/head-usuario.php'); ?>
-	<?php include ('../config/conexao.php'); ?>
-    <script>
-        $(function(){
-            var hash = window.location.hash;
-            if(hash == '#incluido-com-sucesso'){
-                $("#incluido").show();
-            }else if(hash == '#alterado-com-sucesso') {
-                $("#alterado").show();
-            }
-        });
-    </script>
-	<div class="container">
+@extends('layout.master-user')
+@section('head')
+	<script src="{{asset('plugin/color-thief/color-thief.js')}}"></script>
+@stop
+@section('content')
+	<div class="container" id="index">
 		<div class="row">
 			<div class="col-sm-12">
-			    <h1>Usuários</h1>
-				<div class="alert alert-success" role="alert" id="alterado" style="display:none;">
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<p>Alterado com sucesso.</p>
+			    <h1>Bem Vindo - {{ Auth::user()->name }}</h1>
+			</div>
+			<div class="row list-look">
+				@for ($i = 0; $i < 10; $i++)
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+  						<div class="panel-body">
+							<img id="image-{{$i}}" class="img-responsive" src="{{asset('images/ilustracao-look-homen.jpg')}}" alt="">
+						</div>
+						<div class="panel-footer">
+							<p><strong>Evento:</strong> Balada</p>
+							<p><strong>Data:</strong> 01/01/2016</p>
+							<div class="rating">
+								<span><strong>Rating:</strong> </span>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="alert alert-success" role="alert" id="incluido" style="display:none;">
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<p>Incluido com sucesso.</p>
-				</div>
-				<table class="table table-bordered"> 
-					<thead> 
-						<tr> 
-							<th>#</th> 
-							<th>Nome</th> 
-							<th>E-mail</th> 
-							<th>Senha</th> 
-							<th>Ação</th> 
-						</tr> 
-					</thead> 
-					<tbody> 
-						<?php
-							$consulta = $pdo->query("SELECT * FROM usuarios order by id;");
-							foreach($consulta as $key => $value){
-								echo '<tr>'; 
-									echo '<td>' . $value['id'] . '</td>'; 
-									echo '<td>' . $value['nome'] . '</td>'; 
-									echo '<td>' . $value['email'] . '</td>'; 
-									echo '<td>' . $value['senha'] . '</td>'; 
-									echo '<td>';
-										echo '<a class="btn btn-info" href="editar.php?id='.$value['id'].'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</a>';
-										echo '<form action="delete.php" method="POST" class="pull-left" id="destroy_'.$value['id'].'">';
-											echo '<input type="hidden" class="form-control" id="id" name="id" value="'.$value['id'].'">';
-											echo '<button class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> Deletar</button>';
-										echo '</form>';
-									echo '</td>'; 
-								echo '</tr>'; 
-								echo '<script>';
-									echo '$("#destroy_'.$value['id'].'").submit(function() {';
-									    echo 'var c = confirm("Deseja Realmente excluir esse artigo ?");';
-									    echo 'return c;';
-									echo '});';
-								echo '</script>';
-							}
-						?>
-					</tbody> 
-				</table>
+				@endfor
 			</div>
 		</div>
 	</div>
-<?php include('../include/footer.php') ?>
+	<div id="mydiv" style="width: 100px;
+    height: 100px;"></div>
+	<script>
+		// $(window).on("load", function() {
+		// 	function getColor(){
+		// 		alert("Boom!");
+		// 		var img = $("#image-0");
+		// 		// console.log(img);
+		// 		var colorThief = new ColorThief();
+		// 		var color = colorThief.getColor(img);
+		// 		console.log(color);
+		// 	}
+		// 	setTimeout(getColor, 2000);
+		// });
+function colorChange(){
+  //Be sure to include <img id="coverImage" src="" alt=""/>
+  var $myImage = $("#image-0");
+  var colorThief = new ColorThief();
+  
+  //Grabs 8 swatch color palette from image and sets quality to 5 (0 =slow, 10=default/fast)
+  var cp = colorThief.getPalette($myImage[0], 8, 5);
+  
+  //Sets background to 3rd color in the palette.
+  $('body').css('background-color', 'rgb('+cp[2][0]+','+cp[2][1]+','+cp[2][2]+')');
+}
+
+$(document).ready(function() {
+  //Make sure image is loaded before running.
+  colorChange();
+});
+	</script>
+@stop
+@section('script')
+
+@stop
 
 
