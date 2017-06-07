@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default ">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -9,12 +9,12 @@
 			</button>
 			<a class="navbar-brand in-page" href="../">Vestindo Certo</a>
 		</div>
-
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="index.php" class="in-page"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-				<li><a href="novo.php"><i class="fa fa-plus" aria-hidden="true"></i> Novo</a></li>
-				<li><a href="pesquisar.php"><i class="fa fa-search" aria-hidden="true"></i> Pesquisar</a></li>
+				<li><a href="{{url('usuario')}}" class="in-page"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+				<li><a href="{{url('usuario/perfil')}}" class="in-page"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a></li>
+				<li><a href="{{url('usuario/gerar-look')}}"><i class="fa fa-plus" aria-hidden="true"></i> Gerar Look</a></li>
+				<li><a href="{{url('usuario/roupas')}}"><i class="fa fa-search" aria-hidden="true"></i> Roupas</a></li>
 			</ul>
 		</div>
 	</div>

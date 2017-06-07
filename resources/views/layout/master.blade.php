@@ -18,8 +18,8 @@
 <body>
 	@include('layout.nav')
 	@yield('content')
-	@include('layout.footer')
 	@yield('style')
 	@yield('script')
+	@include('layout.footer')
 </body>
 </html>
