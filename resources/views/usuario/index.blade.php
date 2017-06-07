@@ -9,7 +9,7 @@
 			    <h1>Bem Vindo - {{ Auth::user()->name }}</h1>
 			</div>
 			<div class="row list-look">
-				@for ($i = 0; $i < 10; $i++)
+				@for ($i = 0; $i < 9; $i++)
 				<div class="col-sm-4">
 					<div class="panel panel-default">
   						<div class="panel-body">
