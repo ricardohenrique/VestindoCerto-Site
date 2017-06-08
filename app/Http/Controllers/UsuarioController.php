@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class UsuarioController extends Controller
 {
@@ -11,8 +12,7 @@ class UsuarioController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct(){
         $this->middleware('auth');
     }
 
@@ -30,5 +30,14 @@ class UsuarioController extends Controller
 
     public function roupas(){
     	return view('usuario.roupas');
+    }
+
+    public function update(Request $request){
+        // Validate the request...
+        // dd($request->all());
+
+        $usuario = User::find(4);
+        $usuario->name = ;
+        $usuario->save();
     }
 }

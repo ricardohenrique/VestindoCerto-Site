@@ -17,12 +17,15 @@ Route::get('contato', "ContatoController@index");
 Route::get('como-funciona', "ComoFuncionaController@index");
 Route::get('simulador', "SimuladorController@index");
 Route::get('apresentacao', "ApresentacaoController@index");
+
 Route::group(['prefix' => 'usuario'], function () {
     Route::get('/', "UsuarioController@index");
     Route::get('perfil', "UsuarioController@perfil");
     Route::get('gerar-look', "UsuarioController@gerarLook");
     Route::get('roupas', "UsuarioController@roupas");
+    Route::post('perfil', "UsuarioController@update");
 });
+
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
