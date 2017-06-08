@@ -21,8 +21,8 @@ Route::get('apresentacao', "ApresentacaoController@index");
 Route::group(['prefix' => 'usuario'], function () {
     Route::get('/', "UsuarioController@index");
     Route::get('perfil', "UsuarioController@perfil");
-    Route::get('gerar-look', "UsuarioController@gerarLook");
-    Route::post('gerar-look', "UsuarioController@gerarNovoLook");
+    Route::get('gerar-look', "LookController@index");
+    Route::post('gerar-look', "LookController@newLook");
     Route::get('roupas', "UsuarioController@roupas");
     Route::post('perfil', "UsuarioController@update");
 });

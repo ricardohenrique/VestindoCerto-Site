@@ -15,10 +15,6 @@
 	<div class="container simulador-panel">
 		<div class="row">
 			<div class="col-sm-offset-2 col-sm-8">
-				<form action="{{url('usuario/gerar-look')}}" method="POST">
-					<input type="text" name="teste">
-					<button>enviar</button>
-				</form>
 				<form id="form-gerar" action="{{url('usuario/gerar-look')}}" method="POST">
 					{{ csrf_field() }}
 					<div class="panel" id="panel-01">
