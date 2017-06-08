@@ -39,9 +39,8 @@ class UsuarioController extends Controller
     public function update(Request $request){
         // Validate the request...
         // dd($request->all());
-
         $usuario = User::find(4);
-        $usuario->name = ;
+        $usuario->name = $request->name;
         $usuario->save();
     }
 }
