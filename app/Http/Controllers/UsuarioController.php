@@ -23,16 +23,24 @@ class UsuarioController extends Controller
     public function perfil(){
     	return view('usuario.perfil');
     }
-    
+
     public function roupas(){
     	return view('usuario.roupas');
     }
 
     public function update(Request $request){
-        // Validate the request...
-        // dd($request->all());
-        $usuario = User::find(4);
+        $usuario = User::find($request->id);
         $usuario->name = $request->name;
-        $usuario->save();
+        $usuario->email = $request->email;
+        $usuario->password = bcrypt($request->password);
+        $validate = $usuario->save();
+
+        if ($validate) {
+            return redirect('usuario/perfil')->with('status-sucess', 'Usuário atualizado com sucesso');
+        }else{
+            return redirect('usuario/perfil')->with('status-error', 'Algo deu errado, tente novamente.');
+        }
+
+        // dd($validate);
     }
 }
