@@ -25,7 +25,11 @@ class UsuarioController extends Controller
     }
 
     public function gerarLook(){
-    	return view('usuario.gerarLook');
+    	return view('usuario.gerar-look');
+    }
+
+    public function gerarNovoLook(Request $request){
+        dd($request);
     }
 
     public function roupas(){

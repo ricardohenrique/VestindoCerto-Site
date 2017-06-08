@@ -2,7 +2,7 @@
 
 @section('head')
 	<script type="text/javascript"  src="{{asset('js/nav-pages.js')}}"></script>
-	<link rel="stylesheet" type="text/css" href="{{asset('css/comoFunciona.css')}}">	
+	<link rel="stylesheet" type="text/css" href="{{asset('css/como-funciona.css')}}">	
 @stop
 
 	<div class="container-fluid roupa-perfeita comoFunciona" id="como-funciona" name="como-funciona">
