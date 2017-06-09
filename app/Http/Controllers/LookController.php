@@ -9,6 +9,7 @@ use VestindoCerto\Clothe;
 use VestindoCerto\User;
 use Auth;
 use DB;
+use VestindoCerto\Look;
 
 class LookController extends Controller
 {
@@ -25,28 +26,48 @@ class LookController extends Controller
         $idPlace = $request->place;
         $idEvent = $request->event;
         $idUser = Auth::user()->id;
-        // dd($request->all(), $idPlace, $idUser);
-
-        // $users = new User();
-        // $users = User::find(4)->clothes;
 
         $users = DB::table('clothe')
-            ->join('users', 'users.id', '=', 'clothe.fk_user')
-            ->join('clothe_place', 'clothe.id', '=', 'clothe_place.clothe')
-            ->join('place', 'clothe_place.place', '=', 'place.id')
-            ->join('clothe_event', 'clothe.id', '=', 'clothe_event.clothe')
-            ->join('event', 'clothe_event.event', '=', 'event.id')
-            ->where('place.id', '=', $idPlace)
-            ->where('event.id', '=', $idEvent)
-            ->where('users.id', '=', $idUser)
-            ->get();
+                    ->join('users', 'users.id', '=', 'clothe.fk_user')
+                    ->join('clothe_place', 'clothe.id', '=', 'clothe_place.clothe')
+                    ->join('place', 'clothe_place.place', '=', 'place.id')
+                    ->join('clothe_event', 'clothe.id', '=', 'clothe_event.clothe')
+                    ->join('event', 'clothe_event.event', '=', 'event.id')
+                    ->join('type', 'clothe.fk_type', 'type.id')
+                    ->join('type_master', 'type.master', 'type_master.id')
+                    ->where('place.id', '=', $idPlace)
+                    ->where('event.id', '=', $idEvent)
+                    ->where('users.id', '=', $idUser)
+                    ->select("clothe.*", "type_master.id as up_or_down")
+                    ->inRandomOrder()
+                    ->get();
 
-        // foreach($users as $key => $value){
-        //     dd($value->image);
-        // }
+        $up = false;
+        $down = false;
+        foreach($users as $key => $value){
+            if($value->up_or_down == 1 && $up == false){
+                $lookPiece[] = $value;
+                $up = true;
+            }else if($value->up_or_down == 2 && $down == false){
+                $lookPiece[] = $value;
+                $down = true;
+            }
+            if($up == true && $down == true){
+                break;
+            }
+        }
 
-        dd($users);
+        $lookPiece = collect($lookPiece)->sortBy('up_or_down')->toArray();
         
-        dd($clothes->all()->toArray());
+        $data["look"] = $lookPiece;
+        
+        $look["fk_event"] = $idEvent;
+        $look["fk_place"] = $idPlace;
+        $look["fk_user"] = $idUser;
+        $data["old_infos"] = $look;
+        // dd($data);
+        $newLook = Look::create($look);
+        
+        return view("usuario/look-view", $data);
     }
 }
