@@ -33,7 +33,7 @@ class UsuarioController extends Controller
         $validate = $usuario->save();
 
         if ($validate) {
-            return redirect('usuario/perfil')->with('status-sucess', 'Usuário atualizado com sucesso');
+            return redirect('usuario/perfil')->with('status-sucess', 'Alterações realizadas com sucesso');
         }else{
             return redirect('usuario/perfil')->with('status-error', 'Algo deu errado, tente novamente.');
         }
