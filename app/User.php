@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Get the clothes record associated with the user.
+     */
+    public function clothes()
+    {
+        return $this->hasMany('VestindoCerto\Clothe', 'fk_user', 'id');
+    }
 }
