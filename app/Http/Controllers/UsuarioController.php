@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace VestindoCerto\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use VestindoCerto\User;
 use Auth;
 
 class UsuarioController extends Controller
