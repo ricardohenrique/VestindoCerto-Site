@@ -35,7 +35,7 @@
 					</div>
 					<div class="panel" id="panel-02" style="display: none;">
 						<h2>Escolha o evento</h2>
-						<div class="btn-group" data-toggle="buttons">
+						<div class="btn-group btn-group-align" data-toggle="buttons">
 							@foreach($events as $key => $value)
 							<label class="btn btn-default">
 								<input type="radio" name="event" autocomplete="off" value="{{$value['id']}}">

@@ -21,6 +21,7 @@ body{
 .simulador-panel .row div .panel form{}
 .simulador-panel .row div .panel .btn-group.btn-controls{margin-top: 15px;padding-top: 15px;border-top: 1px solid #fff;}
 .simulador-panel .row div .panel .btn-group{display: table;margin: 0 auto;}
+.simulador-panel .row div .panel .btn-group-align{margin-left: 48px;}
 .simulador-panel .row div .panel .btn-group label{
     display: block;
     margin:10px;
