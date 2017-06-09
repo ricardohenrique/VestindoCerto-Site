@@ -11,6 +11,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<div class="similator-space"></div>
 	<div class="container simulador-panel">
 		<div class="row">
@@ -20,16 +21,13 @@
 					<div class="panel" id="panel-01">
 						<h2>Escolha o local</h2>
 						<div class="btn-group" data-toggle="buttons">
+							@foreach($places as $key => $value)
 							<label class="btn btn-default">
-								<input type="radio" name="local" autocomplete="off" value="urbano">
+								<input type="radio" name="place" autocomplete="off" value="{{$value['id']}}">
 								<span class="glyphicon glyphicon-equalizer"></span>
-								<span style = "padding-left:5px">Urbano</span>
+								<span style = "padding-left:5px">{{$value['name']}}</span>
 							</label>
-							<label class="btn btn-default">
-								<input type="radio" name="local" autocomplete="off" value="rural">
-								<span class="glyphicon glyphicon-tree-conifer"></span>
-								<span style = "padding-left:5px">Rural</span>
-							</label>
+							@endforeach
 						</div>
 						<div class="btn-group btn-controls" data-toggle="buttons">
 							<div class="btn btn-default" id="btn-panel-01">Próximo</div>
@@ -38,68 +36,16 @@
 					<div class="panel" id="panel-02" style="display: none;">
 						<h2>Escolha o evento</h2>
 						<div class="btn-group" data-toggle="buttons">
+							@foreach($events as $key => $value)
 							<label class="btn btn-default">
-								<input type="radio" name="evento" autocomplete="off" value="faculdade">
+								<input type="radio" name="event" autocomplete="off" value="{{$value['id']}}">
 								<span class="glyphicon glyphicon-ok"></span>
-								<span style = "padding-left:5px">Faculdade</span>
+								<span style = "padding-left:5px">{{$value['name']}}</span>
 							</label>
-							<label class="btn btn-default">
-								<input type="radio" name="evento" autocomplete="off" value="trabalho">
-								<span class="glyphicon glyphicon-ok"></span>
-								<span style = "padding-left:5px">Trabalho</span>
-							</label> <br>
-							<label class="btn btn-default">
-								<input type="radio" name="evento" autocomplete="off" value="festa">
-								<span class="glyphicon glyphicon-ok"></span>
-								<span style = "padding-left:5px">Festa</span>
-							</label>
-							<label class="btn btn-default">
-								<input type="radio" name="evento" autocomplete="off" value="balada">
-								<span class="glyphicon glyphicon-ok"></span>
-								<span style = "padding-left:5px">Balada</span>
-							</label> <br>
-							<label class="btn btn-default">
-								<input type="radio" name="evento" autocomplete="off" value="casamento">
-								<span class="glyphicon glyphicon-ok"></span>
-								<span style = "padding-left:5px">Casamento</span>
-							</label>
-							<label class="btn btn-default">
-								<input type="radio" name="evento" autocomplete="off" value="academia">
-								<span class="glyphicon glyphicon-ok"></span>
-								<span style = "padding-left:5px">Academia</span>
-							</label>
-						</div>
-						<div class="btn-group btn-controls" data-toggle="buttons">
-							<div class="btn btn-default voltar" id="btn-voltar-panel-02">Voltar</div>
-							<div class="btn btn-default" id="btn-panel-02">Próximo</div>
-						</div>
-					</div>
-					<div class="panel" id="panel-03" style="display: none;">
-						<h2>Escolha o clima</h2>
-						<div class="btn-group" data-toggle="buttons">
-							<label class="btn btn-default">
-								<input type="radio" name="clima" autocomplete="off" value="sol">
-								<span class="glyphicon glyphicon-ok"></span>
-								<span style = "padding-left:5px">Sol</span>
-							</label>
-							<label class="btn btn-default">
-								<input type="radio" name="clima" autocomplete="off" value="chuva">
-								<span class="glyphicon glyphicon-ok"></span>
-								<span style = "padding-left:5px">Chuva</span>
-							</label> <br>
-							<label class="btn btn-default">
-								<input type="radio" name="clima" autocomplete="off" value="nublado">
-								<span class="glyphicon glyphicon-ok"></span>
-								<span style = "padding-left:5px">Nublado</span>
-							</label>
-							<label class="btn btn-default">
-								<input type="radio" name="clima" autocomplete="off" value="seco">
-								<span class="glyphicon glyphicon-ok"></span>
-								<span style = "padding-left:5px">Seco</span>
-							</label>
+							@endforeach
 						</div>
 						<div class="btn-group btn-controls">
-							<div class="btn btn-default voltar" id="btn-voltar-panel-03">Voltar</div>
+							<div class="btn btn-default voltar" id="btn-voltar-panel-02">Voltar</div>
 							<button class="btn btn-default" id="btn-panel-03">Gerar Look<i style="display: none;position:absolute!important;font-size:35px!important;" id="loading-gerar-ico" class="fa fa-cog fa-spin fa-fw" ></i><span class="sr-only">Loading...</span></button>
 						</div>
 					</div>
@@ -146,9 +92,8 @@
         });
         $("#btn-voltar-panel-03").click(function(){
 			$("#form-gerar").submit();
-			alert("ola");
-            $("#panel-03").hide("drop", 500);
-            $("#panel-02").delay(700).show("drop", 1000);
+            // $("#panel-03").hide("drop", 500);
+            // $("#panel-02").delay(700).show("drop", 1000);
         });
     </script>
 @stop

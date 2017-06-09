@@ -4,7 +4,7 @@ namespace VestindoCerto;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Clothe extends Model
+class Place extends Model
 {
-    protected $table = 'clothe';
+    protected $table = 'place';
 }

@@ -4,7 +4,7 @@ namespace VestindoCerto;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Clothe extends Model
+class Event extends Model
 {
-    protected $table = 'clothe';
+    protected $table = 'event';
 }
