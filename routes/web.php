@@ -28,6 +28,8 @@ Route::group(['prefix' => 'usuario'], function () {
     Route::post('roupas/store', "RoupasController@store");
     Route::post('perfil', "UsuarioController@update");
     Route::get('roupas/get/{filename}', 'RoupasController@render');
+    Route::get('roupas/{id}', "RoupasController@edit");
+    Route::put('roupas/update', "RoupasController@update");
 });
 
 Route::get('logout', "UsuarioController@logout");

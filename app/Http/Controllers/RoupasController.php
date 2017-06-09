@@ -75,4 +75,29 @@ class RoupasController extends Controller
         }
         
     }
+
+    public function edit($id){
+        $place = new Place();
+        $event = new Event();
+        $type = new Type();
+        $roupa = Clothe::find($id);
+
+        $data['places'] = $place->all()->toArray();
+        $data['events'] = $event->all()->toArray();
+        $data['type'] = $type->all()->toArray();
+        $data['roupa'] = $roupa->toArray(); 
+
+        return view('usuario/roupas/update', $data);
+    }
+
+    public function update(Request $request){
+        $clothe = Clothe::find($request->id_roupa);
+        $clothe->fk_type = $request->type;
+        $validate = $clothe->save;
+        if ($validate) {
+            return redirect('usuario/roupas')->with('status-sucess', 'Alterações realizadas com sucesso');
+        }else{
+            return redirect('usuario/roupas')->with('status-error', 'Algo deu errado, tente novamente.');
+        }
+    }
 }

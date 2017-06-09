@@ -38,3 +38,5 @@
 #roupas .row.list-look div .panel .panel-footer p{font-size: 18px;line-height: 30px;}
 #roupas .row.list-look div .panel .panel-footer .rating i{margin: 5px;font-size: 20px;color:#ffe000;}
 /*#roupas .row.list-look div{margin-bottom:50px;}*/
+
+.btn-group{display: table; margin: 10px auto ;}

@@ -26,7 +26,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<a href="{{url('usuario/roupas/nova')}}" class="btn btn-default">Nova Roupa</a>
+				<a href="{{url('usuario/roupas/nova')}}" style="margin-bottom: 30px;" class="btn btn-info btn-lg"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nova Roupa</a>
 				<!--<form class="row" method="GET" action="">
 					<div class="form-group col-sm-3">
 						<label for="">Local</label>
@@ -67,7 +67,10 @@
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="main-color main-color-{{$key}}"></div>
-						<?php $roupa = $value["image_name"]; ?>
+						<?php
+							$roupa = $value["image_name"]; 
+							$idRoupa = $value["id_roupa"];
+						?>
 						<div class="image-panel">
 							<img id="image-{{$key}}" class="img-responsive" src='{{url("usuario/roupas/get/$roupa")}}' alt="">
 						</div>
@@ -92,6 +95,12 @@
 								<i class="fa fa-star" aria-hidden="true"></i>
 							@endfor
 						</div>
+						<div class="">
+							<div class="btn-group">
+								<a href='{{url("usuario/roupas/$idRoupa")}}'><button>Alterar</button></a>
+								<a href=""><button>Deletar</button></a>
+							</div>
+						</div>						
 					</div>
 				</div>
 			</div>
