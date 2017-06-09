@@ -22,6 +22,6 @@ class LookController extends Controller
         $idPlace = $request->local;
         $idEvent = $request->evento;
         $idUser = Auth::user()->id;
-        dd($request->all());
+        dd($request->all(), $idUser);
     }
 }
