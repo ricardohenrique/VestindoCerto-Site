@@ -1,4 +1,10 @@
 /*roupas*/
+#roupas .row.list-look div .panel .panel-body{
+    max-height: 250px;
+    display: inline-table;
+    width: 100%;
+}
+#roupas .row.list-look div .panel .panel-body .image-panel{min-height: 250px;}
 #roupas .row.list-look div .panel .panel-body img{
     max-width: 150px;
     margin: 0 auto;

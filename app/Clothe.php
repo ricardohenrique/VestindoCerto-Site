@@ -8,8 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Clothe extends Model
 {
     protected $table = 'clothe';
-
-    /**
-     * Get the phone record associated with the user.
-     */
+    protected $fillable = ['image', 'description', 'fk_type', 'fk_user', 'rating'];
 }
