@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Auth;
 
 class UsuarioController extends Controller
 {
@@ -40,7 +41,10 @@ class UsuarioController extends Controller
         }else{
             return redirect('usuario/perfil')->with('status-error', 'Algo deu errado, tente novamente.');
         }
+    }
 
-        // dd($validate);
+    public function logout(){
+        Auth::logout();
+        return redirect('login');
     }
 }

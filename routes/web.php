@@ -27,6 +27,8 @@ Route::group(['prefix' => 'usuario'], function () {
     Route::post('perfil', "UsuarioController@update");
 });
 
+Route::get('logout', "UsuarioController@logout");
+
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
