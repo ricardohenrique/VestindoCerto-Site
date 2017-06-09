@@ -12,8 +12,4 @@ class Clothe extends Model
     /**
      * Get the phone record associated with the user.
      */
-    // public function user()
-    // {
-    //     return $this->hasOne('VestindoCerto\User', 'id');
-    // }
 }

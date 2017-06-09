@@ -25,10 +25,6 @@ class UsuarioController extends Controller
     	return view('usuario.perfil');
     }
 
-    public function roupas(){
-    	return view('usuario.roupas');
-    }
-
     public function update(Request $request){
         $usuario = User::find($request->id);
         $usuario->name = $request->name;
