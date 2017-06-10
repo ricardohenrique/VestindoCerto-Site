@@ -18,40 +18,43 @@ USE `vestindo_certo`;
 
 -- Copiando estrutura para tabela vestindo_certo.clothe
 CREATE TABLE IF NOT EXISTS `clothe` (
-  `id` smallint(6) NOT NULL AUTO_INCREMENT,
-  `image` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `image` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` text COLLATE utf8_unicode_ci,
-  `fk_type` tinyint(4) NOT NULL,
-  `fk_user` mediumint(9) NOT NULL,
+  `fk_type` tinyint(4) DEFAULT NULL,
+  `fk_user` mediumint(9) DEFAULT NULL,
+  `rating` tinyint(4) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- Copiando dados para a tabela vestindo_certo.clothe: ~23 rows (aproximadamente)
 /*!40000 ALTER TABLE `clothe` DISABLE KEYS */;
-INSERT INTO `clothe` (`id`, `image`, `description`, `fk_type`, `fk_user`) VALUES
-	(17, 'IMG_5855.jpg', '0', 1, 1),
-	(18, 'IMG_5854.jpg', '0', 2, 0),
-	(19, 'IMG_5853.jpg', '0', 1, 0),
-	(20, 'IMG_5852.jpg', '0', 2, 0),
-	(21, 'IMG_5851.jpg', '0', 2, 0),
-	(22, 'IMG_5848.jpg', '0', 2, 0),
-	(23, 'IMG_5845.jpg', '0', 2, 0),
-	(24, 'IMG_5844.jpg', '0', 1, 0),
-	(25, 'IMG_5843.jpg', '0', 1, 0),
-	(26, 'IMG_5841.jpg', '0', 4, 0),
-	(27, 'IMG_5839.jpg', '0', 4, 0),
-	(28, 'IMG_5838.jpg', '0', 4, 0),
-	(29, 'IMG_5723.jpg', '0', 1, 0),
-	(30, 'IMG_5717.jpg', '0', 2, 0),
-	(31, 'IMG_5716.jpg', '0', 2, 0),
-	(32, 'IMG_5715.jpg', '0', 1, 0),
-	(33, 'IMG_5714.jpg', '0', 1, 0),
-	(34, 'IMG_5713.jpg', '0', 1, 0),
-	(35, 'IMG_5712.jpg', '0', 2, 0),
-	(36, 'IMG_5711.jpg', '0', 3, 0),
-	(37, 'IMG_5710.jpg', '0', 3, 0),
-	(38, 'IMG_5709.jpg', '0', 3, 0),
-	(39, 'IMG_5708.jpg', '0', 3, 0);
+INSERT INTO `clothe` (`id`, `image`, `description`, `fk_type`, `fk_user`, `rating`, `created_at`, `updated_at`) VALUES
+	(17, 'IMG_5855.jpg', '0', 1, 4, 3, NULL, NULL),
+	(18, 'IMG_5854.jpg', '0', 2, 4, 3, NULL, NULL),
+	(19, 'IMG_5853.jpg', '0', 1, 4, 3, NULL, NULL),
+	(20, 'IMG_5852.jpg', '0', 2, 4, 3, NULL, NULL),
+	(21, 'IMG_5851.jpg', '0', 2, 4, 3, NULL, NULL),
+	(22, 'IMG_5848.jpg', '0', 2, 4, 3, NULL, NULL),
+	(23, 'IMG_5845.jpg', '0', 2, 4, 3, NULL, NULL),
+	(24, 'IMG_5844.jpg', '0', 1, 4, 3, NULL, NULL),
+	(25, 'IMG_5843.jpg', '0', 1, 4, 3, NULL, NULL),
+	(26, 'IMG_5841.jpg', '0', 4, 4, 3, NULL, NULL),
+	(27, 'IMG_5839.jpg', '0', 4, 4, 3, NULL, NULL),
+	(28, 'IMG_5838.jpg', '0', 4, 4, 3, NULL, NULL),
+	(29, 'IMG_5723.jpg', '0', 1, 4, 3, NULL, NULL),
+	(30, 'IMG_5717.jpg', '0', 2, 4, 3, NULL, NULL),
+	(31, 'IMG_5716.jpg', '0', 2, 4, 3, NULL, NULL),
+	(32, 'IMG_5715.jpg', '0', 1, 4, 3, NULL, NULL),
+	(33, 'IMG_5714.jpg', '0', 1, 4, 3, NULL, NULL),
+	(34, 'IMG_5713.jpg', '0', 1, 4, 3, NULL, NULL),
+	(35, 'IMG_5712.jpg', '0', 2, 4, 3, NULL, NULL),
+	(36, 'IMG_5711.jpg', '0', 3, 4, 3, NULL, NULL),
+	(37, 'IMG_5710.jpg', '0', 3, 4, 3, NULL, NULL),
+	(38, 'IMG_5709.jpg', '0', 3, 4, 3, NULL, NULL),
+	(39, 'IMG_5708.jpg', '0', 3, 4, 3, NULL, NULL);
 /*!40000 ALTER TABLE `clothe` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela vestindo_certo.clothe_event
@@ -65,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `clothe_event` (
 -- Copiando dados para a tabela vestindo_certo.clothe_event: 50 rows
 /*!40000 ALTER TABLE `clothe_event` DISABLE KEYS */;
 INSERT INTO `clothe_event` (`id`, `clothe`, `event`) VALUES
-	(1, 17, 1),
+	(1, 17, 3),
 	(2, 17, 2),
 	(3, 18, 1),
 	(4, 18, 6),
@@ -116,6 +119,21 @@ INSERT INTO `clothe_event` (`id`, `clothe`, `event`) VALUES
 	(49, 39, 3),
 	(50, 39, 4);
 /*!40000 ALTER TABLE `clothe_event` ENABLE KEYS */;
+
+-- Copiando estrutura para tabela vestindo_certo.clothe_place
+CREATE TABLE IF NOT EXISTS `clothe_place` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `clothe` int(11) NOT NULL,
+  `place` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- Copiando dados para a tabela vestindo_certo.clothe_place: 2 rows
+/*!40000 ALTER TABLE `clothe_place` DISABLE KEYS */;
+INSERT INTO `clothe_place` (`id`, `clothe`, `place`) VALUES
+	(1, 17, 1),
+	(2, 17, 2);
+/*!40000 ALTER TABLE `clothe_place` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela vestindo_certo.event
 CREATE TABLE IF NOT EXISTS `event` (
@@ -188,20 +206,34 @@ INSERT INTO `place` (`id`, `name`) VALUES
 
 -- Copiando estrutura para tabela vestindo_certo.type
 CREATE TABLE IF NOT EXISTS `type` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` tinyint(4) NOT NULL AUTO_INCREMENT,
+  `name` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `master` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- Copiando dados para a tabela vestindo_certo.type: 4 rows
 /*!40000 ALTER TABLE `type` DISABLE KEYS */;
-INSERT INTO `type` (`id`, `name`, `description`) VALUES
-	(1, 'Tipo01', 'Camiseta'),
-	(2, 'Tipo02', 'Regata'),
-	(3, 'Tipo03', 'Shorts'),
-	(4, 'Tipo04', 'Calça');
+INSERT INTO `type` (`id`, `name`, `master`) VALUES
+	(1, 'Camiseta', 1),
+	(2, 'Regata', 1),
+	(3, 'Shorts', 2),
+	(4, 'Calça', 2);
 /*!40000 ALTER TABLE `type` ENABLE KEYS */;
+
+-- Copiando estrutura para tabela vestindo_certo.type_master
+CREATE TABLE IF NOT EXISTS `type_master` (
+  `id` tinyint(4) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8_unicode_ci DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- Copiando dados para a tabela vestindo_certo.type_master: 2 rows
+/*!40000 ALTER TABLE `type_master` DISABLE KEYS */;
+INSERT INTO `type_master` (`id`, `name`) VALUES
+	(1, 'cima'),
+	(2, 'baixo');
+/*!40000 ALTER TABLE `type_master` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela vestindo_certo.users
 CREATE TABLE IF NOT EXISTS `users` (
@@ -215,23 +247,11 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Copiando dados para a tabela vestindo_certo.users: 0 rows
+-- Copiando dados para a tabela vestindo_certo.users: 1 rows
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-	(4, 'ricardo mota', 'ricardo.hb@outlook.com', '$2y$10$xiruAxetKCt6blE9uZvqLOscCBpB9Vv4rdvbooc0Dk4/EYxKnAhBa', NULL, '2017-06-09 02:14:29', '2017-06-09 02:14:40');
+	(4, 'ricardo motaaa', 'ricardo.hb@outlook.com', '$2y$10$zWLTynTAHehuOeI13Kl6XuigHz9TNfxlDqMdqCXZWczdVxuQ5HuCO', NULL, '2017-06-09 02:14:29', '2017-06-09 22:45:42');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
-
--- Copiando estrutura para tabela vestindo_certo.user_clothe
-CREATE TABLE IF NOT EXISTS `user_clothe` (
-  `id` smallint(6) NOT NULL AUTO_INCREMENT,
-  `fk_roupa` smallint(6) NOT NULL,
-  `fk_usuario` smallint(6) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- Copiando dados para a tabela vestindo_certo.user_clothe: ~0 rows (aproximadamente)
-/*!40000 ALTER TABLE `user_clothe` DISABLE KEYS */;
-/*!40000 ALTER TABLE `user_clothe` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
